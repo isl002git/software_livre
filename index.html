@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT na Prática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #F05032; /* Git orange */
+        }
+        h2 {
+            color: #F05032; /* Git orange */
+        }
+        p {
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #282c34; /* Dark background for code */
+            color: #ffffff; /* White text for code */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a {
+            color: #F05032; /* Git orange for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>GIT na Prática</h1>
+
+    <h2>Instalação</h2>
+    <p>Para começar a trabalhar com git, primeiramente devemos fazer a instalação dele no seu computador. É possível instalar o git tanto no Linux, afinal ele foi desenvolvido pelo próprio Linus Torvalds, assim como no Mac e no Windows.</p>
+    <p>Para começar, vamos deixar aqui como fazer a instalação dele e, mesmo que você tenha feito isso anteriormente, é importante manter o GIT atualizado.</p>
+
+    <h2>No Linux</h2>
+    <p>Se você usa uma distribuição baseada em Debian como o Ubuntu, use o apt-get:</p>
+    <pre>sudo apt-get install git</pre>
+    <p>Agora caso você esteja utilizando o Fedora, você pode usar o yum:</p>
+    <pre>sudo yum install git</pre>
+    <p>Agora caso as opções acima não sejam seu caso, utilize este link para encontrar o que precisa:</p>
+    <a href="http://git-scm.com/download/linux" target="_blank">http://git-scm.com/download/linux</a>
+
+    <h2>No Mac</h2>
+    <p>Agora no Mac, você tem algumas outras opções.</p>
+    <p>Caso esteja utilizando o gerenciador de pacotes Homebrew:</p>
+    <pre>brew install git</pre>
+    <p>Utilizando MacPorts:</p>
+    <pre>sudo port install git</pre>
+    <p>Mas, assim como no Linux, caso nenhuma das opções acima seja para você, utilize este link para localizar sua forma de instalação:</p>
+    <a href="https://git-scm.com/download/mac" target="_blank">https://git-scm.com/download/mac</a>
+
+    <h2>No Windows</h2>
+    <p>Para fazer a instalação no Windows o processo é bem simples. Basta acessar o site abaixo e baixar a versão referente ao seu SO.</p>
+    <a href="https://git-scm.com/download/win" target="_blank">https://git-scm.com/download/win</a>
+    <p>Mas caso você deseje utilizar o winget para obter o git, abra o terminal como administrador e execute o comando abaixo:</p>
+    <pre>winget install --id Git.Git -e --source winget</pre>
+
+    <h2>Configuração Inicial do Git</h2>
+    <p>Após a instalação do git você deve fazer a configuração inicial básica para utilizar o sistema.</p>
+    <p>O git contém uma ferramenta chamada git config que permite que você configure algumas variáveis que orientarão o funcionamento dele.</p>
+    <p>No Linux você pode localizar essa ferramenta em <code>/etc/gitconfig</code></p>
+    <p>No macOS, o arquivo <code>.gitconfig</code> geralmente está localizado no diretório home do usuário. <code>~/gitconfig</code></p>
+    <p>No Windows em <code>C:\Users\[usuario]</code></p>
+</body>
+</html>
