@@ -72,5 +72,21 @@
     <p>No Linux você pode localizar essa ferramenta em <code>/etc/gitconfig</code></p>
     <p>No macOS, o arquivo <code>.gitconfig</code> geralmente está localizado no diretório home do usuário. <code>~/gitconfig</code></p>
     <p>No Windows em <code>C:\Users\[usuario]</code></p>
+
+    <h2>Identificando-se</h2>
+    <p>Para começar a configuração do git é importante identificar-se. Essa identificação será marcada em todas as alterações que você fizer em arquivos após um “commit”, que abordaremos logo mais.</p>
+    <p>Para fazer isso, execute os comandos a seguir em seu terminal e será possível realizar essa configuração. Lembre-se de substituir “Seu nome” e “seuemail@exemplo.com.br” por seu nome e e-mail.</p>
+    <pre>
+    git config --global user.name "Seu nome"
+    git config --global user.email "seuemail@exemplo.com.br"
+    </pre>
+    <p>Neste momento também é importante configurar o seu editor de texto padrão que será utilizado pelo git. É possível utilizar o nano, o vim, Emacs, todos utilizados por usuários de Linux e caso você não seja e estejam habituados a eles pode não ser muito agradável ou exigir algum tempo entendendo as ferramentas.</p>
+    <p>Exemplo com o Visual Studio Code:</p>
+    <pre>
+    git config --global core.editor "code --wait"
+    </pre>
+    <p>Caso queira ver outras opções de configuração de editores, clique no link abaixo:</p>
+    <a href="https://docs.github.com/en/get-started/getting-started-with-git/associating-text-editors-with-git" target="_blank">🔗Associar editores de texto ao Git - GitHub Docs</a>
+    <p>É possível ver todas as configurações realizadas até o momento utilizando o comando <code>git config --list</code></p>
 </body>
 </html>
